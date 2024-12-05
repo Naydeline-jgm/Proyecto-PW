@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Slider</title>
+    <!-- Vincula un archivo CSS local llamado "style.css" para estilizar la página -->
+    <link  rel="stylesheet" href="style.css">
+    <!-- Incluye el archivo CSS de Swiper desde un CDN para los estilos del slider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+    <!-- Contenedor principal del slider -->
+    <div class="swiper-container mySwiper">
+        <!-- Wrapper que contiene las diapositivas -->
+        <div class="swiper-wrapper">
+          <!-- Cada diapositiva del slider -->
+          <div class="swiper-slide"><img src="img/1.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="img/2.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="img/3.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="img/4.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="img/5.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="img/6.jpg" alt=""></div>
+        </div>
+        <!-- Botón para avanzar al siguiente slide -->
+        <div class="swiper-button-next"></div>
+        <!-- Botón para retroceder al slide anterior -->
+        <div class="swiper-button-prev"></div>
+        <!-- Elemento de paginación que muestra puntos de navegación -->
+        <div class="swiper-pagination"></div>
+      </div>
+    <!-- Incluye el archivo JavaScript de Swiper desde un CDN para las funcionalidades del slider -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Vincula un archivo JavaScript local llamado "main.js" para inicializar el slider o agregar funcionalidad personalizada -->
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+/* 
+Aplica un margen y padding de 0 a todos los elementos para eliminar el espacio predeterminado.
+*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* 
+Estilos para el contenedor del slider:
+- Ocupa el 100% del ancho y al menos el 100% de la altura de la ventana.
+- Fondo oscuro (#0d0b18).
+- Centra verticalmente los elementos hijos con `display: flex` y `align-items: center`.
+- Oculta el contenido que se desborda con `overflow: hidden`.
+*/
+.swiper-container {
+    width: 100%;
+    min-height: 100vh;
+    background: #0d0b18;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+/*
+Estilos para el wrapper que contiene las diapositivas:
+- Agrega un padding horizontal de 20px para crear un espacio alrededor.
+*/
+.swiper-wrapper {
+    padding: 0 20px;
+}
+
+/*
+Estilos para cada diapositiva:
+- Ancho fijo de 400px y altura fija de 600px.
+*/
+.swiper-slide {
+    width: 400px;
+    height: 600px;
+}
+
+/*
+Estilos para las imágenes dentro de las diapositivas:
+- Se aseguran de que las imágenes ocupen el ancho completo del contenedor (`width: 100%`).
+- Se ajustan las imágenes sin distorsionarlas con `object-fit: cover`.
+- Posiciona el contenido de la imagen en el centro con `object-position: center`.
+- Aplica bordes redondeados (`border-radius: 0.5rem`) y un efecto de sombra.
+*/
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 0.5rem;
+    box-shadow: 8px 8px 11px rgba(216, 216, 216, 0.1);
+}
+
+/*
+Reglas específicas para dispositivos con un ancho máximo de 544px (responsivo):
+- Elimina el padding horizontal del wrapper para que el contenido ocupe todo el espacio disponible.
+*/
+@media (max-width: 544px) {
+    .swiper-wrapper {
+        padding: 0;
+    }
+}
